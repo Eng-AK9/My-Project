@@ -1,162 +1,346 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed CV</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>النخبة العقارية | Al Nukhba Real Estate</title>
+  <meta name="description" content="النخبة العقارية - وجهتك الأولى للاستثمار والتملّك العقاري في جدة والمملكة العربية السعودية. خدمات عقارية، استشارات فردية، وعرض العقارات." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="logo-mark" aria-hidden="true">
+          <!-- Inline gold buildings logo -->
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f5d76e"/><stop offset="0.5" stop-color="#d4af37"/><stop offset="1" stop-color="#b8912b"/>
+              </linearGradient>
+            </defs>
+            <g fill="url(#g)">
+              <polygon points="46,12 54,16 54,74 46,74"/>
+              <polygon points="30,40 38,44 38,74 30,74"/>
+              <polygon points="62,32 70,36 70,74 62,74"/>
+              <polygon points="18,52 24,55 24,74 18,74"/>
+              <polygon points="76,48 82,51 82,74 76,74"/>
+            </g>
+            <path d="M14 78 Q50 70 86 78" stroke="url(#g)" stroke-width="2.4" fill="none"/>
+          </svg>
+        </span>
+        <span class="brand-name"><b>النخبة العقارية</b><span>Al Nukhba Real Estate</span></span>
+      </a>
 
-    <header>
-        <a href="#" class="logo">Eng.Ahmed</a>
-        <nav class="navigation">
-            <a href="#Services">Services</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact</a>
-            
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">الرئيسية</a>
+        <a href="#services">الخدمات</a>
+        <a href="#properties">العقارات</a>
+        <a href="#consult">الاستشارات</a>
+        <a href="#map">الموقع</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
 
-        </nav>
-    </header>
-
-
-    <section class="main">
-        <div>
-            <h2>Hello I'm End.Ahmed<br><span>Sowftware Engineer</span></h2>
-            <h3>A website specializing in designing a logo, PowerPoint presentations, and creating websites using</h3>
-            <a href="#Projects" class="main-btn">View my Work</a>
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-regular fa-envelope"></i></a> 
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-             </div>
+      <div class="nav-actions">
+        <div class="user-chip" id="userChip">
+          <span class="avatar" id="userAvatar">A</span>
+          <div><span id="userName">مستخدم</span><br><small id="userRole">—</small></div>
+          <button class="btn btn-ghost btn-sm" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i></button>
         </div>
-    </section>
-    <section class="cards" id="Services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-microsoft" style="color: #123bc2;"></i>
-                </div>
-                <div class="info">
-                 <h3>Microsoft Office</h3>
-                 <p>Work on complete Office applications including professional projects and presentations.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-html5" style="color: #074d8f;"></i>
-                </div>
-                <div class="info">
-                 <h3>Build a website</h3>
-                 <p>Create a complete website in <b>Python</b>,and fomatting with HTML and CSS.</p>
-                </div>
-            </div>
-            </div>
-        </section>
+        <button class="btn btn-gold btn-sm" id="loginBtn"><i class="fa-solid fa-user"></i> دخول / حساب</button>
+        <a href="admin.html" class="btn btn-ghost btn-sm" title="لوحة الإدارة"><i class="fa-solid fa-shield-halved"></i></a>
+        <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
 
-        <section class="Projects" id="Projects">
-            <h2 class="title">Projects</h2>
-            <div class="content">
-                <div class="Project-card">
-              <div class="Project-image">
-                <img src="vid/870a2f0a426751eac1fc9cefcd97be78.gif">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <h1>استثمارك العقاري <span class="gold-text">يبدأ من النخبة</span> في قلب جدة</h1>
+        <p class="lead">نقدّم لك تجربة عقارية متكاملة: فلل، شقق، أراضٍ ومكاتب مختارة بعناية، مع استشارات فردية مباشرة تُرشدك لأفضل قرار استثماري في المملكة العربية السعودية.</p>
+        <div class="hero-cta">
+          <a href="#properties" class="btn btn-gold"><i class="fa-solid fa-building"></i> تصفّح العقارات</a>
+          <button class="btn btn-ghost" id="heroAddProp"><i class="fa-solid fa-plus"></i> أضِف عقارك</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b class="gold-text" id="statProps">0</b><span>عقار معروض</span></div>
+          <div class="stat"><b class="gold-text">+15</b><span>سنة خبرة</span></div>
+          <div class="stat"><b class="gold-text" id="statUsers">0</b><span>عميل مسجّل</span></div>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="badge"><b>جدة</b> — عروس البحر الأحمر<br><small style="color:var(--text-dim)">أرقى الأحياء والمشاريع العقارية</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">خدماتنا</span>
+        <h2>حلول عقارية <span class="gold-text">تليق بالنخبة</span></h2>
+        <div class="divider-gold"></div>
+        <p>باقة متكاملة من الخدمات العقارية المصممة لتلبية احتياجات المستثمر والباحث عن السكن المثالي.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid">
+        <!-- filled by JS for easy editing -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROPERTIES ============ -->
+  <section class="section" id="properties" style="background:var(--black-2);border-block:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">العقارات</span>
+        <h2>عقارات <span class="gold-text">مختارة بعناية</span></h2>
+        <div class="divider-gold"></div>
+        <p>تصفّح أحدث العقارات المعتمدة من فريقنا. سجّل الدخول كمالك عقار لإضافة عقارك ليظهر بعد اعتماد الإدارة.</p>
+      </div>
+
+      <div class="props-toolbar reveal" id="propFilters">
+        <button class="filter-chip active" data-filter="all">الكل</button>
+        <button class="filter-chip" data-filter="فيلا">فلل</button>
+        <button class="filter-chip" data-filter="شقة">شقق</button>
+        <button class="filter-chip" data-filter="أرض">أراضٍ</button>
+        <button class="filter-chip" data-filter="مكتب">مكاتب / تجاري</button>
+      </div>
+
+      <div style="text-align:center;margin-bottom:26px">
+        <button class="btn btn-gold" id="addPropBtn"><i class="fa-solid fa-plus"></i> أضِف عقارك الآن</button>
+      </div>
+
+      <div class="props-grid" id="propsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 1:1 CONSULTATION ============ -->
+  <section class="section consult" id="consult">
+    <div class="container consult-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--gold-2);letter-spacing:4px;font-weight:700">استشارات 1 إلى 1</span>
+        <h2 style="font-size:clamp(1.7rem,4vw,2.5rem);margin:8px 0 10px">استشارة عقارية <span class="gold-text">فردية ومباشرة</span></h2>
+        <p style="color:var(--text-dim)">جلسة خاصة وجهاً لوجه مع مستشار عقاري متخصص، مصمّمة حول حالتك الاستثمارية أو السكنية تحديدًا — بسرّية تامة ومتابعة شخصية.</p>
+        <ul class="consult-list">
+          <li><span class="ci"><i class="fa-solid fa-user-tie"></i></span><div><b>مستشار مخصّص لك</b><p>مستشار واحد يرافق ملفك من البداية حتى إتمام الصفقة.</p></div></li>
+          <li><span class="ci"><i class="fa-solid fa-chart-line"></i></span><div><b>تحليل استثماري دقيق</b><p>دراسة العائد والمخاطر لأي فرصة عقارية في جدة والمملكة.</p></div></li>
+          <li><span class="ci"><i class="fa-solid fa-file-signature"></i></span><div><b>دعم التفاوض والتوثيق</b><p>مساندتك في التفاوض وإجراءات الإفراغ والتوثيق العقاري.</p></div></li>
+        </ul>
+      </div>
+      <div class="consult-card reveal">
+        <span class="eyebrow" style="color:var(--gold-2)">الجلسة الفردية</span>
+        <div class="price-tag gold-text">499 <small>ر.س / جلسة</small></div>
+        <p style="color:var(--text-dim);margin:10px 0 20px">مدة الجلسة 60 دقيقة — حضوري في جدة أو عن بُعد عبر الاتصال المرئي.</p>
+        <form id="consultForm">
+          <div class="field"><label>الاسم <span class="req">*</span></label><input type="text" name="name" placeholder="اسمك الكامل" required></div>
+          <div class="row-2">
+            <div class="field"><label>الجوال <span class="req">*</span></label><input type="tel" name="phone" placeholder="05xxxxxxxx" required></div>
+            <div class="field"><label>الموعد المفضّل</label><input type="date" name="date"></div>
+          </div>
+          <div class="field"><label>موضوع الاستشارة</label><textarea name="topic" placeholder="اكتب باختصار ما ترغب بمناقشته..."></textarea></div>
+          <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-calendar-check"></i> احجز جلستك الآن</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAP ============ -->
+  <section class="section" id="map">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">الموقع</span>
+        <h2>نغطّي <span class="gold-text">جدة</span> والمملكة العربية السعودية</h2>
+        <div class="divider-gold"></div>
+        <p>مقرّنا في مدينة جدة، ونخدم عملاءنا في مختلف مناطق المملكة.</p>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          title="خريطة جدة - المملكة العربية السعودية"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=38.90%2C21.35%2C39.35%2C21.75&layer=mapnik&marker=21.5433%2C39.1728"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="map-meta reveal">
+        <div class="m"><i class="fa-solid fa-location-dot"></i><span><b>العنوان</b>جدة، طريق الأمير سلطان، حي الروضة</span></div>
+        <div class="m"><i class="fa-solid fa-clock"></i><span><b>أوقات العمل</b>السبت - الخميس، 9 ص - 9 م</span></div>
+        <div class="m"><i class="fa-solid fa-globe"></i><span><b>نطاق الخدمة</b>جدة · مكة · الرياض · جميع مناطق المملكة</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact" style="background:var(--black-2);border-block:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">تواصل معنا</span>
+        <h2>نحن هنا <span class="gold-text">لخدمتك</span></h2>
+        <div class="divider-gold"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item"><span class="ci"><i class="fa-solid fa-phone"></i></span><div><small>اتصل بنا</small><b dir="ltr">+966 53 421 8608</b></div></div>
+          <div class="contact-item"><span class="ci"><i class="fa-brands fa-whatsapp"></i></span><div><small>واتساب</small><b dir="ltr">+966 53 421 8608</b></div></div>
+          <div class="contact-item"><span class="ci"><i class="fa-solid fa-envelope"></i></span><div><small>البريد الإلكتروني</small><b dir="ltr">info@alnukhba-realestate.sa</b></div></div>
+          <div class="contact-item"><span class="ci"><i class="fa-solid fa-location-dot"></i></span><div><small>العنوان</small><b>جدة، حي الروضة، المملكة العربية السعودية</b></div></div>
+        </div>
+        <div class="form-card reveal">
+          <form id="contactForm">
+            <div class="field"><label>الاسم <span class="req">*</span></label><input type="text" name="name" placeholder="اسمك الكامل" required></div>
+            <div class="row-2">
+              <div class="field"><label>البريد الإلكتروني <span class="req">*</span></label><input type="email" name="email" placeholder="you@email.com" required></div>
+              <div class="field"><label>الجوال</label><input type="tel" name="phone" placeholder="05xxxxxxxx"></div>
             </div>
-            <div class="project-info">
-                <p class="project-category">Script Writing & Video Production</p>
-                <strong class="project-title">
-                    <span>Create UX/UI  9.99$</span>
-                    <a href="#" class="more-details">More details</a>
+            <div class="field"><label>رسالتك <span class="req">*</span></label><textarea name="message" placeholder="كيف يمكننا مساعدتك؟" required></textarea></div>
+            <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-paper-plane"></i> إرسال الرسالة</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                </strong>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:14px">
+            <span class="logo-mark"><svg viewBox="0 0 100 100" width="40" height="40"><g fill="url(#g)"><polygon points="46,12 54,16 54,74 46,74"/><polygon points="30,40 38,44 38,74 30,74"/><polygon points="62,32 70,36 70,74 62,74"/></g></svg></span>
+            <span class="brand-name"><b>النخبة العقارية</b><span>Al Nukhba Real Estate</span></span>
+          </div>
+          <p>وجهتك الموثوقة للاستثمار والتملّك العقاري في جدة والمملكة العربية السعودية، بخبرة تتجاوز 15 عامًا.</p>
+          <div class="social-row">
+            <a href="#" aria-label="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>روابط سريعة</h4>
+          <a href="#services">الخدمات</a>
+          <a href="#properties">العقارات</a>
+          <a href="#consult">الاستشارات 1 إلى 1</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+        <div>
+          <h4>للملاك</h4>
+          <a href="#" id="footerAddProp">أضِف عقارك</a>
+          <a href="#" id="footerLogin">تسجيل الدخول / حساب جديد</a>
+          <a href="admin.html">لوحة الإدارة</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> النخبة العقارية — Al Nukhba Real Estate. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <!-- ============ AUTH MODAL ============ -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal">
+      <div class="modal-head">
+        <div><h3 id="authTitle">مرحبًا بك</h3><p id="authSub">سجّل الدخول أو أنشئ حسابًا جديدًا</p></div>
+        <button class="modal-close" data-close><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tabs" id="authTabs">
+          <button class="active" data-tab="login">تسجيل الدخول</button>
+          <button data-tab="register">حساب جديد</button>
+        </div>
+
+        <!-- LOGIN -->
+        <form id="loginForm">
+          <div class="field"><label>البريد الإلكتروني</label><input type="email" name="email" placeholder="you@email.com" required></div>
+          <div class="field"><label>كلمة المرور</label><input type="password" name="password" placeholder="••••••••" required></div>
+          <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-right-to-bracket"></i> دخول</button>
+        </form>
+
+        <!-- REGISTER -->
+        <form id="registerForm" style="display:none">
+          <div class="field"><label>الاسم الكامل <span class="req">*</span></label><input type="text" name="name" placeholder="الاسم الكامل" required></div>
+          <div class="row-2">
+            <div class="field"><label>البريد الإلكتروني <span class="req">*</span></label><input type="email" name="email" placeholder="you@email.com" required></div>
+            <div class="field"><label>الجوال <span class="req">*</span></label><input type="tel" name="phone" placeholder="05xxxxxxxx" required></div>
+          </div>
+          <div class="field"><label>كلمة المرور <span class="req">*</span></label><input type="password" name="password" placeholder="6 أحرف على الأقل" minlength="6" required></div>
+          <div class="field">
+            <label>هل أنت صاحب عقار؟ <span class="req">*</span></label>
+            <div class="radio-cards" id="ownerCards">
+              <label class="radio-card selected"><input type="radio" name="isOwner" value="owner" checked><i class="fa-solid fa-house-user"></i><div><b>صاحب عقار</b><small>أرغب بعرض عقاراتي</small></div></label>
+              <label class="radio-card"><input type="radio" name="isOwner" value="client"><i class="fa-solid fa-user"></i><div><b>باحث / عميل</b><small>أبحث عن عقار</small></div></label>
             </div>
-                </div>
-                <div class="Project-card">
-                    <div class="Project-image">
-                      <img src="vid/giphy.gif">
-                  </div>
-      <div class="project-info">
-                      <p class="project-category">Script Writing & Video Production</p>
-                      <strong class="project-title">
-                          <span>Create websit  24.99$</span>
-                         <a href="#" class="more-details">More details</a>
-     
-                     </strong>
-                 </div>
-                     </div>
-                     <div class="Project-card">
-                       <div class="Project-image">
-                         <img src="vid/Ahmed.gif">
-                     </div>
-                     <div class="project-info">
-                         <p class="project-category">Script Writing & Video Production</p>
-                          <strong class="project-title">
-                              <span>Create logo 4.99$</span>
-                              <a href="#" class="more-details">More details</a>
-          
-                          </strong>
-                      </div>
-                          </div>
-                          <div class="Project-card">
-                            <div class="Project-image">
-                              <img src="imges/mi.avif">
-                          </div>
-                          <div class="project-info">
-                              <p class="project-category">Script Writing & Video Production</p>
-                              <strong class="project-title">
-                                  <span>Microsoft 9.99$</span>
-                                  <a href="#" class="more-details">More details</a>
-              
-                              </strong>
-                          </div>
-                              </div>
-                            </div>
-                         </section>
-        <section class="card-contact" id="Contact">
-            <h2 class="title">For inquiries</h2>
-            <div class="content">
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-phone" style="color: #0645b2;"></i>
-                    </div>
-                    <div class="info">
-                     <h3>Phone</h3>
-                     <p>+966534218608</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="card">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope" style="color: #154eb2;"></i>
-                        </div>
-                        <div class="info">
-                         <h3>Gmail</h3>
-                         <p>ahmedkabri12@gmail.com</p>
-                         <a href="http://ahmedkabri12@gmail.com"></a>
-                        </div>
-                    </div>
-                 </div>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-envelope-circle-check"></i> إنشاء الحساب وإرسال كود التحقق</button>
+        </form>
 
-        </section>
+        <!-- OTP VERIFY -->
+        <form id="otpForm" style="display:none">
+          <p style="color:var(--text-dim);text-align:center;margin-bottom:6px">أرسلنا كود تحقق مكوّن من 6 أرقام إلى بريدك:</p>
+          <p style="text-align:center;color:var(--gold-1);font-weight:700" id="otpEmail"></p>
+          <div class="otp-inputs" id="otpInputs">
+            <input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric">
+            <input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric">
+          </div>
+          <div class="otp-note">للتجربة (محاكاة الإرسال): كود التحقق هو <b id="otpDemo">------</b></div>
+          <button type="submit" class="btn btn-gold btn-block" style="margin-top:16px"><i class="fa-solid fa-check"></i> تأكيد وتوثيق الحساب</button>
+          <p style="text-align:center;margin-top:12px"><a href="#" id="otpResend" style="color:var(--gold-2)">إعادة إرسال الكود</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
 
-        <footer class="footer">
-            <p class="footer-title">Copyrights@ <span>Ahmed Al-Kabri</span></p>
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-
-            
+  <!-- ============ ADD PROPERTY MODAL ============ -->
+  <div class="modal-overlay" id="propModal">
+    <div class="modal modal-lg">
+      <div class="modal-head">
+        <div><h3>إضافة عقار جديد</h3><p>سيُراجع عقارك من الإدارة قبل نشره في الموقع</p></div>
+        <button class="modal-close" data-close><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <form id="propForm">
+          <div class="row-2">
+            <div class="field"><label>عنوان العقار <span class="req">*</span></label><input type="text" name="title" placeholder="مثال: فيلا فاخرة بحي الشاطئ" required></div>
+            <div class="field"><label>نوع العقار <span class="req">*</span></label>
+              <select name="type" required>
+                <option value="فيلا">فيلا</option><option value="شقة">شقة</option>
+                <option value="أرض">أرض</option><option value="مكتب">مكتب / تجاري</option>
+              </select>
             </div>
-        </footer>
-        
-        
-    
+          </div>
+          <div class="row-2">
+            <div class="field"><label>المدينة <span class="req">*</span></label>
+              <select name="city"><option>جدة</option><option>مكة المكرمة</option><option>الرياض</option><option>الدمام</option><option>المدينة المنورة</option></select>
+            </div>
+            <div class="field"><label>الحي / الموقع <span class="req">*</span></label><input type="text" name="district" placeholder="مثال: حي الروضة" required></div>
+          </div>
+          <div class="row-2">
+            <div class="field"><label>السعر (ر.س) <span class="req">*</span></label><input type="number" name="price" placeholder="مثال: 1500000" min="0" required></div>
+            <div class="field"><label>المساحة (م²)</label><input type="number" name="area" placeholder="مثال: 500" min="0"></div>
+          </div>
+          <div class="field"><label>وصف العقار</label><textarea name="desc" placeholder="اكتب تفاصيل العقار: عدد الغرف، المميزات، الخدمات القريبة..."></textarea></div>
+          <div class="field">
+            <label>صورة العقار <span class="req">*</span></label>
+            <label class="file-drop" for="propImage">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <span>اضغط لرفع صورة العقار (JPG / PNG)</span>
+            </label>
+            <input type="file" id="propImage" accept="image/*" style="display:none">
+            <div class="file-preview" id="propImagePreview"><img alt="معاينة العقار"></div>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block"><i class="fa-solid fa-paper-plane"></i> إرسال العقار للمراجعة</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
